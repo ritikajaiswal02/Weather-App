@@ -4,14 +4,20 @@ import { getState } from '../api/Api'
 
 function Card() {
 
-  const { data, setData } = useContext(Weathercontext)
+  const { data, setData, loading, setLoading } = useContext(Weathercontext)
   const [state, setState] = useState()
-  console.log(data)
+  console.log(loading)
 
   return (
     <div className='bg-[#ebedef30] w-[80%] min-h-110 rounded-[20px] shadow-2xl shadow-blue-500 md:w-[45%]'>
       <div className='text-2xl font-Monaco p-4 text-blue-800'>
-        {
+
+        {loading ? <>
+        <div className="flex justify-center items-center h-40 flex-col">
+            <div className="animate-spin rounded-full h-10 w-10 border-t-4 border-b-4 border-purple-950"></div>
+            <p className='text-center text-xl font-semibold'>Loading...</p> 
+          </div>
+        </> :
           data ?
             <>
               <div className='md:flex justify-around'>
