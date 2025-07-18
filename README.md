@@ -35,7 +35,7 @@ A responsive weather application built using **React**, **Tailwind CSS**, and th
 
 ## 🔗 Live Demo
 
-Check out the live demo here: [Weather App Demo]([https://your-live-url.netlify.app](https://weather-app-woad-psi.vercel.app/))
+Check out the live demo here: [Weather App Demo](https://weather-app-woad-psi.vercel.app/)
 
 ---
 
